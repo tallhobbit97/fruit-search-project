@@ -38,7 +38,7 @@ function showSuggestions(results, inputVal) {
 function useSuggestion(e) {
 	let clickedLi = e.target;
 	let inputValue = document.querySelector('#fruit').value;
-	inputValue = clickedLi.innerText;
+	input.value = clickedLi.innerText;
 	console.log(clickedLi.innerText);
 	console.log('inputValue = ' + inputValue)
 }
