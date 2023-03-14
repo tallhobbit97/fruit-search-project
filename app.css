@@ -35,10 +35,11 @@
     /* TODO */
   }
   ul li {
-    /* TODO */
+    background-color: white;
   }
   ul li:hover {
-    /* TODO */
+    background-color: black;
+    color: white;
   }
   
   input {
