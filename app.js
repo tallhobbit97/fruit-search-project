@@ -6,18 +6,25 @@ const fruit = ['Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 'Blackb
 function search(str) {
 	let results = [];
 
-	// TODO
+	fruit.forEach( fruit => {
+		if (fruit.includes(str)){
+			results.push(fruit);
+		}
+	});
 
 	return results;
 }
 
 function searchHandler(e) {
-	// TODO
+	const inputValue = document.querySelector('#fruit').value;
+
+	showSuggestions(search(inputValue), inputValue);
 }
 
 function showSuggestions(results, inputVal) {
 
-	// TODO
+	
+
 }
 
 function useSuggestion(e) {
