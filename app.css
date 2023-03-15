@@ -2,8 +2,9 @@
     box-sizing: border-box;
   }
   
-  :focus {
-   border: 2px, solid, red;
+  input:focus {
+   border: 2px solid orangered;
+   outline: none;
   }
   
   body {
@@ -11,44 +12,58 @@
   }
   
   input {
+   display: block;
    background-color: rgba(100, 99, 99, 0.324);
    border: 0;
    height: 40px;
    width: 300px;
-   border-bottom: 1px, solid, orangered;
+   border-bottom: 2px solid orangered;
+   padding-left: 10px;
   }
   
   .search-container {
-   /* TODO */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    position: relative;
   }
-  .search-container input,
+
   .search-container .suggestions {
-    /* TODO */
-  }
-  .search-container input {
-   /* TODO */
-  }
-  .search-container .suggestions {
-     /* TODO */
+    position: absolute;
+    top: 0;
+    margin-top: 40px;
+    max-height: 200px;
+    overflow-y: scroll;
+    width: 300px;
   }
   
   ul {
-    /* TODO */
+    margin: 0;
+    padding: 0;
   }
-  ul.has-suggestions {
-    /* TODO */
-  }
+
+  .suggestions::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+.suggestions::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.suggestions::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
   ul li {
+    display: block;
     background-color: rgba(100, 99, 99, 0.324);
-    height: 40px;
-    width: 300px;
     list-style-type: none;
+    padding: 10px;
   }
   ul li:hover {
     background-color: rgba(183, 70, 1, 0.799);
     font-weight: bold;
-  }
-  
-  input {
-     /* TODO */
   }
