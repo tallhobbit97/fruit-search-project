@@ -30,6 +30,7 @@ function showSuggestions(results, inputVal) {
 		results.forEach( fruit => {
 			const newSuggestion = document.createElement('li');
 			newSuggestion.innerText = fruit;
+			newSuggestion.addEventListener('click', useSuggestion);
 			suggestions.appendChild(newSuggestion);
 		});
 	}
@@ -44,4 +45,3 @@ function useSuggestion(e) {
 }
 
 input.addEventListener('keyup', searchHandler);
-suggestions.addEventListener('click', useSuggestion);

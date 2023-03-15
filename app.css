@@ -1,17 +1,21 @@
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
   }
   
   :focus {
-   /* TODO */
+   border: 2px, solid, red;
   }
   
   body {
-    /* TODO */
+    background: linear-gradient(0.25turn, rgb(244, 244, 79), rgb(218, 84, 1));
   }
   
   input {
-   /* TODO */
+   background-color: rgba(100, 99, 99, 0.324);
+   border: 0;
+   height: 40px;
+   width: 300px;
+   border-bottom: 1px, solid, orangered;
   }
   
   .search-container {
@@ -35,11 +39,14 @@
     /* TODO */
   }
   ul li {
-    background-color: white;
+    background-color: rgba(100, 99, 99, 0.324);
+    height: 40px;
+    width: 300px;
+    list-style-type: none;
   }
   ul li:hover {
-    background-color: black;
-    color: white;
+    background-color: rgba(183, 70, 1, 0.799);
+    font-weight: bold;
   }
   
   input {
